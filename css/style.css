@@ -684,6 +684,11 @@ a {
 .project__title a:active {
   color: #1371fa;
 }
+.project__title span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+}
 .project__image-link {
   display: block;
   width: 250px;
