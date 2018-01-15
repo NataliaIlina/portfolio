@@ -684,7 +684,10 @@ a {
 .project__title a:active {
   color: #1371fa;
 }
-.project__title span {
+.project__name {
+  text-transform: capitalize;
+}
+.project__protect {
   display: block;
   font-size: 1rem;
   font-weight: 400;
