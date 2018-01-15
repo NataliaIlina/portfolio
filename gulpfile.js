@@ -17,6 +17,7 @@ var imagemin = require('gulp-imagemin');
 var watch = require('gulp-watch');
 var del = require('del');
 var run = require('gulp-run-sequence');
+var pug = require('gulp-pug');
 
 var path = {
   build: {
@@ -42,19 +43,27 @@ var path = {
   }
 };
 
-//Сброрка html
-gulp.task('build-html', function() {
-  return gulp.src(path.src.html)
+gulp.task('build-html', function () {
+  gulp.src('templates/index.pug')
+  .pipe(pug({pretty: true}))
   .pipe(gulp.dest(path.build.html))
+  .pipe(gulp.dest('.'))
   .pipe(server.reload({stream: true}));
 });
+
+//Сброрка html
+// gulp.task('build-html', function () {
+//   return gulp.src(path.src.html)
+//   .pipe(gulp.dest(path.build.html))
+//   .pipe(server.reload({stream: true}));
+// });
 
 //сборка JS
 gulp.task('build-js', function() {
   return gulp.src(path.src.js)
   .pipe(uglify())
   .pipe(gulp.dest(path.build.js))
-  .pipe(server.reload({stream: true}));
+  // .pipe(server.reload({stream: true}));
 });
 
 //сборка стилей
