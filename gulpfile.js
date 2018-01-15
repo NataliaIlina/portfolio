@@ -28,14 +28,14 @@ var path = {
     fonts: 'build/fonts/'
   },
   src: {
-    html: '*.html',
+    html: 'templates/index.pug',
     js: 'js/*.js',
     img: 'img/*.*',
     fonts: 'fonts/**/*.{woff,woff2}',
     style: 'less/style.less'
   },
   watch: {
-    html: '*.html',
+    html: 'templates/**/*.pug',
     js: 'js/*.js',
     img: 'img/**/*.*',
     fonts: 'fonts/**/*.*',
@@ -43,20 +43,14 @@ var path = {
   }
 };
 
+//Сброрка html
 gulp.task('build-html', function () {
-  gulp.src('templates/index.pug')
+  gulp.src(path.src.html)
   .pipe(pug({pretty: true}))
   .pipe(gulp.dest(path.build.html))
   .pipe(gulp.dest('.'))
   .pipe(server.reload({stream: true}));
 });
-
-//Сброрка html
-// gulp.task('build-html', function () {
-//   return gulp.src(path.src.html)
-//   .pipe(gulp.dest(path.build.html))
-//   .pipe(server.reload({stream: true}));
-// });
 
 //сборка JS
 gulp.task('build-js', function() {
