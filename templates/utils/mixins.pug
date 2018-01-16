@@ -13,8 +13,8 @@ mixin project-card(project)
       img(src="img/" + project.name + ".jpg", alt="Проект " + project.name)
     div.project__info
       ul.project__features
-        each feat in project.features
-          li.project__feature= feat
+        each feature in project.features
+          li.project__feature= feature
       p.project__description= project.description
       a.project__link(href="https://nataliailina.github.io/38944-" + project.name) Ссылка на опубликованный сайт
       a.project__link(href="https://github.com/nataliailina/38944-" + project.name) Ссылка на репозиторий проекта в Github
