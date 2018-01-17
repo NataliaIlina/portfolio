@@ -595,6 +595,10 @@ a {
 .about__item {
   margin-bottom: 10px;
 }
+.about__link {
+  color: #000000;
+  font-style: italic;
+}
 .portfolio {
   padding-top: 40px;
 }
