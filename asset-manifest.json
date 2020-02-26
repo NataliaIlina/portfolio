@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7e15974a.chunk.css",
+    "main.js": "/portfolio/static/js/main.8423237d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8423237d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.94c268e8.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.94c268e8.js.map",
+    "static/js/2.f8dc561d.chunk.js": "/portfolio/static/js/2.f8dc561d.chunk.js",
+    "static/js/2.f8dc561d.chunk.js.map": "/portfolio/static/js/2.f8dc561d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b69a520f5ce8c18b04f29ee5b4122e00.js": "/portfolio/precache-manifest.b69a520f5ce8c18b04f29ee5b4122e00.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.7e15974a.chunk.css.map": "/portfolio/static/css/main.7e15974a.chunk.css.map",
+    "static/js/2.f8dc561d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f8dc561d.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/portfolio/static/media/skype.e948aa1b.svg",
+    "static/media/device.jpg": "/portfolio/static/media/device.fa27854f.jpg",
+    "static/media/keksobooking.jpg": "/portfolio/static/media/keksobooking.87b3c6c2.jpg",
+    "static/media/kekstagram.jpg": "/portfolio/static/media/kekstagram.3c759862.jpg",
+    "static/media/mishka.jpg": "/portfolio/static/media/mishka.1e287127.jpg",
+    "static/media/pixel-perfect.jpg": "/portfolio/static/media/pixel-perfect.23f31f6b.jpg",
+    "static/media/sixCities.jpg": "/portfolio/static/media/sixCities.5d9193c5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94c268e8.js",
+    "static/js/2.f8dc561d.chunk.js",
+    "static/css/main.7e15974a.chunk.css",
+    "static/js/main.8423237d.chunk.js"
+  ]
+}
