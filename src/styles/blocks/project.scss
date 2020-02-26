@@ -1,0 +1,170 @@
+.project {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid $black;
+
+  &:first-of-type {
+    border-top: 1px solid $black;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    text-align: right;
+
+    .project__features {
+      justify-content: flex-end;
+      padding-left: 50px;
+    }
+
+    .project__feature {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+    &:nth-child(odd) {
+      text-align: left;
+
+      .project__image-link {
+        order: 2;
+      }
+
+      .project__features {
+        justify-content: flex-start;
+        padding-right: 50px;
+        padding-left: 0;
+      }
+
+      .project__feature {
+        margin-right: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.project__title {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: $bold;
+  color: $black;
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: $primary;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+
+    &:active {
+      color: $primary;
+    }
+  }
+}
+
+.project__name {
+  text-transform: capitalize;
+}
+
+.project__protect {
+  display: block;
+  font-size: 1rem;
+  font-weight: $regular;
+}
+
+.project__image-link {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px $primary;
+  transition: box-shadow 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 0px 15px $primary;
+  }
+
+  @include tablet {
+    margin: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project__info {
+  @include tablet {
+    width: calc(100% - 270px);
+  }
+}
+
+.project__features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.project__feature {
+  width: auto;
+  padding: 6px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: $white;
+  background-color: $primary;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px $primary;
+
+  @include tablet {
+    padding: 8px 10px;
+  }
+}
+
+.project__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.project__link {
+  display: block;
+  margin-bottom: 10px;
+  font-family: $font-title;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  line-height: 1;
+  color: $black;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary;
+  }
+
+  @include tablet {
+    font-size: 1.1rem;
+  }
+}

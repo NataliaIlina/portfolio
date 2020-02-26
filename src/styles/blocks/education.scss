@@ -1,0 +1,60 @@
+.education {
+  padding: 20px 0;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.education__title {
+  @include title();
+}
+
+.education__info {
+  width: 250px;
+  padding: 20px 0;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 30%;
+  }
+}
+
+.education__intensive {
+  color: $primary;
+}
+
+.education__company {
+  display: block;
+  width: 100%;
+  height: 56px;
+  background: url('../../img/logo.png') no-repeat center;
+}
+
+.education__link {
+  display: block;
+  margin-bottom: 30px;
+  font-family: $font-title;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  line-height: 1;
+  color: $black;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary;
+  }
+
+  @include tablet {
+    font-size: 1.1rem;
+  }
+}

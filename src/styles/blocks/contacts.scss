@@ -1,0 +1,38 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__title {
+  @include title();
+}
+
+.contacts__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('../../img/skype.svg') no-repeat center;
+  background-size: contain;
+  transition: opacity 0.2s ease;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  &--github {
+    background-image: url('../../img/github.svg');
+  }
+  &--mail {
+    background-image: url('../../img/mail.svg');
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

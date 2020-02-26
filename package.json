@@ -1,59 +1,36 @@
 {
-  "name": "my_projects",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "Портфолио Наталья Ильина",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "7.1.x",
-    "browser-sync": "2.18.x",
-    "del": "^3.0.0",
-    "eslint": "4.2.0",
-    "eslint-config-htmlacademy": "0.3.x",
-    "gulp": "3.9.x",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-csso": "^3.0.0",
-    "gulp-imagemin": "^3.4.0",
-    "gulp-less": "3.3.x",
-    "gulp-plumber": "1.1.x",
-    "gulp-postcss": "7.0.x",
-    "gulp-pug": "^3.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-run-sequence": "^0.3.2",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^4.3.11",
-    "gulp-webp": "^2.3.0",
-    "normalize.less": "^1.0.0",
-    "stylelint": "^8.1.1",
-    "stylelint-config-htmlacademy": "^0.1.0"
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.13.1",
+    "normalize-scss": "^7.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint less/**/*.less --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve",
-    "jstest": "eslint js/"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
-  ],
-  "engines": {
-    "node": "8.2"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "dependencies": {
-    "ajv": "^6.0.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
