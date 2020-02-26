@@ -1,0 +1,57 @@
+@mixin inner {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1024px;
+  }
+}
+
+@mixin title() {
+  width: 100%;
+  font-family: $font-title;
+  font-size: 2.3rem;
+  line-height: 1;
+  font-weight: $bold;
+  color: $blue;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+//media-queries
+@mixin mobile-only {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin device-only {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
