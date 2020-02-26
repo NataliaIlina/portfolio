@@ -3,6 +3,7 @@ import kekstagram from './img/kekstagram.jpg';
 import mishka from './img/mishka.jpg';
 import device from './img/device.jpg';
 import sixCities from './img/sixCities.jpg';
+import pixelHunter from './img/pixel-perfect.jpg';
 
 export const projects = [
   {
@@ -14,13 +15,20 @@ export const projects = [
       'Redux-thunk',
       'TypeScript',
     ],
-    description:
-      'Сервис по подбору недвижимости в аренду. Доступен просмотр подробностей объявления на отдельной странице, просмотр отзывов + возможность оставить отзыв, фильтрация объявлений по заданным параметрам, добавление в избранное + просмотр списка избранного',
     intensive: 'react',
     intensiveTitle: 'Профессиональный JavaScript, уровень 3',
     projectLink: 'https://nataliailina.github.io/six-cities',
     image: sixCities,
     repoLink: 'https://github.com/NataliaIlina/six-cities',
+  },
+  {
+    name: 'pixel-hunter',
+    features: ['ES6', 'Templates', 'ESLint'],
+    intensiveTitle: 'Профессиональный JavaScript, уровень 2',
+    projectLink: 'https://nataliailina.github.io/38944-pixel-hunter/',
+    image: pixelHunter,
+    intensive: 'ecmascript',
+    repoLink: 'https://github.com/NataliaIlina/38944-pixel-hunter',
   },
   {
     name: 'keksobooking',
@@ -33,8 +41,6 @@ export const projects = [
       'Validation',
       'ESLint',
     ],
-    description:
-      'Одностраничное приложение для размещения объявлений об аренде недвижимости. Использована шаблонизация, валидация формы, технология Ajax, реализована фильтрация объявлений по выбранным параментрам.',
     intensive: 'javascript',
     intensiveTitle: 'Профессиональный JavaScript, уровень 1',
     projectLink: 'https://nataliailina.github.io/38944-keksobooking',
@@ -52,8 +58,6 @@ export const projects = [
       'Validation',
       'ESLint',
     ],
-    description:
-      'Одностраничное приложение по загрузке и форматированию фотографий на чистом JavaScript. Использована шаблонизация, валидация формы, технология Ajax, реализована сортировка фотографий по выбранному значению.',
     intensive: 'javascript',
     intensiveTitle: 'Профессиональный JavaScript, уровень 1',
     projectLink: 'https://nataliailina.github.io/38944-kekstagram',
@@ -78,8 +82,6 @@ export const projects = [
       'StyleLint',
       'Pixel-perfect',
     ],
-    description:
-      'Адаптивная сетка, верстка с использованием flex-box, доступность (все интерактивные элементы доступны при использовании клавиатуры), кроссбраузерность (в т. ч. IE11). Реализованы слайдер и открытие модальных окон на JavaScript. Выполнена ретинизация и оптимизация изображений, использован SVG-спрайт.',
     intensive: 'adaptive',
     intensiveTitle: 'Профессиональный HTML и CSS, уровень 2',
     projectLink: 'https://nataliailina.github.io/38944-mishka',
@@ -100,8 +102,6 @@ export const projects = [
       'SVG',
       'Pixel-perfect',
     ],
-    description:
-      'Фиксированная сетка, верстка с использованием flex-box, доступность (все интерактивные элементы доступны при использовании клавиатуры), кроссбраузерность (в т. ч. IE11). Реализованы 2 слайдера на CSS и открытие модальных окон на JavaScript.',
     intensive: 'htmlcss',
     intensiveTitle: 'Профессиональный HTML и CSS, уровень 1',
     projectLink: 'https://nataliailina.github.io/38944-device',

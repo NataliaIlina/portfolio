@@ -8,25 +8,24 @@ const Project = ({
     projectLink,
     image,
     features,
-    description,
     repoLink,
   },
 }) => (
   <article className="project">
-    <h3 className="project__title">
-      Проект
-      <span className="project__name"> &laquo;{name}&raquo;</span>, выполненный
-      на учебном курсе
-      <br />
-      <a href={`https://htmlacademy.ru/intensive/${intensive}`}>
-        &laquo;{intensiveTitle}&raquo;{' '}
-      </a>
-      в HTML Academy
-    </h3>
     <a className="project__image-link" href={projectLink}>
       <img src={image} alt={name} />
     </a>
     <div className="project__info">
+      <h3 className="project__title">
+        Проект
+        <span className="project__name"> &laquo;{name}&raquo;</span>,
+        выполненный на учебном курсе
+        <br />
+        <a href={`https://htmlacademy.ru/intensive/${intensive}`}>
+          &laquo;{intensiveTitle}&raquo;{' '}
+        </a>
+        в HTML Academy
+      </h3>
       <ul className="project__features">
         {features.map((feature) => (
           <li key={feature} className="project__feature">
@@ -34,7 +33,6 @@ const Project = ({
           </li>
         ))}
       </ul>
-      <p className="project__description">{description}</p>
       <a className="project__link" href={projectLink}>
         Ссылка на опубликованный сайт
       </a>

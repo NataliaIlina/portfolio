@@ -27,7 +27,7 @@ const Header = () => (
       </div>
     </nav>
     <h1 className="header__title">
-      Наталья Ильина<span>Junior Front-end Developer</span>
+      Привет, я Наталья Ильина <span>Junior / Middle Front-end Developer</span>
     </h1>
   </header>
 );

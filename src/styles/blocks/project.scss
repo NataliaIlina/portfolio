@@ -2,7 +2,11 @@
   position: relative;
   padding: 20px 0;
   text-align: center;
-  border-bottom: 1px solid fade-out($black, 0.7);
+  border-bottom: 1px solid $black;
+
+  &:first-of-type {
+    border-top: 1px solid $black;
+  }
 
   @include tablet {
     display: flex;
@@ -48,24 +52,22 @@
   margin-bottom: 20px;
   font-weight: $bold;
   color: $black;
-  text-align: center;
 
   @include tablet {
-    margin-bottom: 35px;
     font-size: 1.2rem;
   }
 
   a {
-    color: $blue;
+    color: $primary;
     transition: color 0.3s ease;
 
     &:hover,
     &:focus {
-      color: lighten($blue, 15%);
+      color: $primary;
     }
 
     &:active {
-      color: lighten($blue, 25%);
+      color: $primary;
     }
   }
 }
@@ -87,17 +89,22 @@
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px $black;
+  box-shadow: 0px 0px 2px $primary;
   transition: box-shadow 0.3s ease;
 
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0px 0px 15px $black;
+    box-shadow: 0px 0px 15px $primary;
   }
 
   @include tablet {
     margin: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -119,12 +126,13 @@
 
 .project__feature {
   width: auto;
-  padding: 10px;
+  padding: 6px 8px;
   margin-right: 10px;
   margin-bottom: 10px;
   color: $white;
-  background-color: $blue;
+  background-color: $primary;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px $primary;
 
   @include tablet {
     padding: 8px 10px;
@@ -149,11 +157,11 @@
 
   &:hover,
   &:focus {
-    color: lighten($blue, 15%);
+    color: $primary;
   }
 
   &:active {
-    color: lighten($blue, 25%);
+    color: $primary;
   }
 
   @include tablet {

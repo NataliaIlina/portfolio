@@ -1,8 +1,17 @@
 .footer {
   @include inner();
+  padding-bottom: 30px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__copyright {
-  color: $blue;
+  color: $primary;
   text-align: right;
+  margin: 0;
 }
